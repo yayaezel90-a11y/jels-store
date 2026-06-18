@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-labelledby="title">
+  <title id="title">ZEL CODE Monochrome Logo</title>
+  <path d="M22 25H94L34 94H98" fill="none" stroke="#ffffff" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M34 29C58 10 92 18 101 45C111 75 83 103 53 96C19 88 11 48 34 29Z" fill="none" stroke="#ffffff" stroke-width="3.5" opacity=".72" />
+  <path d="M26 28L61 62M94 25L61 62M61 62L35 94M61 62L98 94" stroke="#ffffff" stroke-width="1.6" opacity=".7" />
+  <circle cx="22" cy="25" r="4" fill="#ffffff"/><circle cx="94" cy="25" r="4" fill="#ffffff"/><circle cx="61" cy="62" r="4" fill="#ffffff"/><circle cx="34" cy="94" r="4" fill="#ffffff"/><circle cx="98" cy="94" r="4" fill="#ffffff"/>
+</svg>
