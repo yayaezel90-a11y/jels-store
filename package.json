@@ -1,0 +1,13 @@
+{
+  "name": "zel-code-ai-os-ui",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static ZEL CODE AI Operating System UI prototype.",
+  "scripts": {
+    "start": "python3 -m http.server 8000",
+    "serve": "python3 -m http.server 8000",
+    "check:html": "python3 - <<'PY'\nfrom html.parser import HTMLParser\nHTMLParser().feed(open('index.html', encoding='utf-8').read())\nprint('html parse ok')\nPY",
+    "check:svg": "python3 - <<'PY'\nimport xml.etree.ElementTree as ET\nfrom pathlib import Path\nfor f in list(Path('assets/logos').glob('*.svg')) + [Path('assets/logo-system.svg'), Path('assets/favicon.svg')]:\n    ET.parse(f)\nprint('all svg parse ok')\nPY",
+    "check": "npm run check:html && npm run check:svg"
+  }
+}

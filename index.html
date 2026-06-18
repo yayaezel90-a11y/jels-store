@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ZEL CODE - AI Operating System by ZEL TECHNOLOGIES</title>
+  <meta name="description" content="ZEL CODE adalah AI Operating System premium untuk command center, workspace, agents, memory, document intelligence, billing, dan admin control." />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <div class="loader" aria-label="Loading ZEL CODE">
+    <div class="loader-card">
+      <svg class="particle-logo" viewBox="0 0 260 180" role="img" aria-label="ZEL CODE neural network Z logo">
+        <defs>
+          <linearGradient id="loaderGradient" x1="0" x2="1">
+            <stop stop-color="#7df9ff" />
+            <stop offset=".54" stop-color="#4f7cff" />
+            <stop offset="1" stop-color="#ff5fd7" />
+          </linearGradient>
+        </defs>
+        <path d="M45 35 H215 L65 145 H220" fill="none" stroke="url(#loaderGradient)" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M72 32 C128 0 182 4 218 44 C250 80 237 133 200 154 C160 178 104 165 72 132 C40 98 44 57 72 32Z" fill="none" stroke="url(#loaderGradient)" stroke-width="4" opacity=".65" />
+        <g fill="#7df9ff">
+          <circle class="particle-dot" style="--x:-120px;--y:-90px" cx="48" cy="35" r="4" />
+          <circle class="particle-dot" style="--x:70px;--y:-95px" cx="98" cy="35" r="3" />
+          <circle class="particle-dot" style="--x:105px;--y:72px" cx="155" cy="35" r="4" />
+          <circle class="particle-dot" style="--x:-92px;--y:82px" cx="212" cy="35" r="3" />
+          <circle class="particle-dot" style="--x:125px;--y:-22px" cx="174" cy="66" r="3" />
+          <circle class="particle-dot" style="--x:-135px;--y:42px" cx="137" cy="93" r="4" />
+          <circle class="particle-dot" style="--x:44px;--y:105px" cx="100" cy="120" r="3" />
+          <circle class="particle-dot" style="--x:-44px;--y:-108px" cx="67" cy="145" r="4" />
+          <circle class="particle-dot" style="--x:132px;--y:94px" cx="142" cy="145" r="3" />
+          <circle class="particle-dot" style="--x:-132px;--y:-76px" cx="218" cy="145" r="4" />
+        </g>
+      </svg>
+      <div class="loader-title">
+        <h2>ZEL CODE</h2>
+        <p class="muted">ZEL TECHNOLOGIES</p>
+      </div>
+      <div class="init">Initializing Intelligence</div>
+      <div class="load-list" aria-label="Initialization steps">
+        <div class="load-row"><span>Loading AI Core</span><b>Ready</b></div>
+        <div class="load-row"><span>Loading Memory Engine</span><b>Ready</b></div>
+        <div class="load-row"><span>Loading Agent System</span><b>Ready</b></div>
+        <div class="load-row"><span>Loading Workspace</span><b>Ready</b></div>
+        <div class="load-row"><span>Loading Knowledge Base</span><b>Ready</b></div>
+        <div class="load-row"><span>Loading Neural Network</span><b>Ready</b></div>
+        <div class="load-row"><span>Loading Interface</span><b>Ready</b></div>
+        <div class="load-row"><span>Loading Complete</span><b>Online</b></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="onboarding show" id="onboarding" aria-modal="true" role="dialog" aria-labelledby="onboardingTitle">
+    <div class="modal">
+      <p class="eyebrow">First login onboarding</p>
+      <h2 id="onboardingTitle">Welcome to ZEL CODE</h2>
+      <p class="muted">AI akan mengenal profil Anda dan membuat dashboard personal otomatis.</p>
+      <div class="form-grid">
+        <label class="field"><span>Nama</span><input id="nameInput" placeholder="Nama Anda" /></label>
+        <label class="field"><span>Profesi</span><input placeholder="Founder, developer, student, creator" /></label>
+        <label class="field"><span>Tujuan</span><input placeholder="Bangun produk, belajar, riset, bisnis" /></label>
+        <label class="field"><span>Bidang diminati</span><input placeholder="AI, coding, finance, design" /></label>
+        <label class="field"><span>Skill</span><input placeholder="React, marketing, data, writing" /></label>
+        <label class="field"><span>Project aktif</span><input placeholder="SaaS, mobile app, thesis, campaign" /></label>
+        <label class="field full-field"><span>Catatan personal</span><textarea rows="3" placeholder="Apa yang harus AI prioritaskan?"></textarea></label>
+      </div>
+      <button class="btn" id="finishOnboarding">Create Personalized Dashboard</button>
+    </div>
+  </div>
+
+  <div class="thinking" id="thinkingPanel" aria-live="polite">
+    <h3>AI Reasoning System</h3>
+    <p class="muted">Premium progress ketika AI berpikir, bukan sekadar teks Thinking.</p>
+    <div class="progress-stack" id="thinkingStack"></div>
+  </div>
+
+  <div class="toast" id="toast" aria-live="polite">Dashboard personal created</div>
+
+  <div class="shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <svg class="mark" viewBox="0 0 120 120"><use href="assets/logo-system.svg#zel-mark"></use></svg>
+        <div>
+          <div class="brand-name">ZEL CODE</div>
+          <div class="eyebrow">ZEL TECHNOLOGIES</div>
+        </div>
+      </div>
+      <nav class="nav" aria-label="Main navigation">
+        <a class="active" href="#command">Command Center</a>
+        <a href="#workspace">Workspace</a>
+        <a href="#project-os">Project OS</a>
+        <a href="#memory">AI Memory</a>
+        <a href="#agents">Agents</a>
+        <a href="#chat">Chat Actions</a>
+        <a href="#documents">Documents</a>
+        <a href="#billing">Billing</a>
+        <a href="#admin">Admin</a>
+        <a href="#logos">Logo System</a>
+      </nav>
+      <div class="side-card">
+        <p class="eyebrow">System health</p>
+        <div class="metric">99.98%</div>
+        <p class="muted">Neural sync stable. Model, server, workspace, and memory services online.</p>
+      </div>
+    </aside>
+
+    <main class="main">
+      <div class="topbar">
+        <span class="pill"><i class="pulse-dot"></i>AI Operating System Online</span>
+        <span class="pill">Realtime users 18,420</span>
+        <span class="pill">Requests today 2.8M</span>
+      </div>
+
+      <section class="hero" id="command">
+        <div class="hero-content">
+          <p class="eyebrow">Global AI Command Center</p>
+          <h1>This is not a chatbot. This is <span class="gradient">ZEL CODE</span>.</h1>
+          <p class="lead">Sistem operasi AI masa depan untuk membangun project, mengelola knowledge, mengaktifkan agent profesional, melihat memory AI, dan mengubah jawaban menjadi output kerja nyata.</p>
+          <div class="command">
+            <input id="commandInput" placeholder="What would you like to build today?" aria-label="Command center search" />
+            <button class="btn" id="runCommand">Build Now</button>
+            <button class="btn secondary" id="openThinking">Show AI Thinking</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="grid">
+        <article class="card wide">
+          <h2>Living Dashboard</h2>
+          <p class="muted">Dashboard terasa hidup dengan floating glass cards, realtime charts, realtime stats, smooth micro animations, hover physics, parallax background, route transitions, modal animations, notification animations, success states, error states, payment states, and upgrade states.</p>
+          <div class="chart"><i class="bar" style="--h:52%"></i><i class="bar" style="--h:78%"></i><i class="bar" style="--h:44%"></i><i class="bar" style="--h:88%"></i><i class="bar" style="--h:63%"></i><i class="bar" style="--h:96%"></i><i class="bar" style="--h:58%"></i></div>
+        </article>
+        <article class="card">
+          <h3>Realtime Intelligence</h3>
+          <div class="metric" data-count="9842">9,842</div>
+          <p class="muted">Active AI tasks, workspace sync, and agent recommendations.</p>
+        </article>
+        <article class="card half">
+          <h2>Smart Loading System</h2>
+          <div class="progress-stack">
+            <div>Reasoning Progress<div class="progress"><i style="--p:92%"></i></div></div>
+            <div>Planning Progress<div class="progress"><i style="--p:83%"></i></div></div>
+            <div>Research Progress<div class="progress"><i style="--p:76%"></i></div></div>
+            <div>Verification Progress<div class="progress"><i style="--p:88%"></i></div></div>
+            <div>Response Generation<div class="progress"><i style="--p:74%"></i></div></div>
+            <div>Visualization Generation<div class="progress"><i style="--p:68%"></i></div></div>
+          </div>
+        </article>
+        <article class="card half">
+          <h2>AI Operating Modes</h2>
+          <div class="chips"><span class="chip">Personal Assistant</span><span class="chip">Business Assistant</span><span class="chip">Study Assistant</span><span class="chip">Coding Assistant</span><span class="chip">Research Assistant</span><span class="chip">Creative Assistant</span><span class="chip">Project Manager</span></div>
+        </article>
+        <article class="card full" id="workspace">
+          <h2>Workspace System</h2>
+          <p class="muted">Workspace menggabungkan rasa Notion, Linear, Cursor, Figma, dan ClickUp dalam satu sistem.</p>
+          <div class="module-grid" id="workspaceModules"></div>
+        </article>
+        <article class="card wide" id="project-os">
+          <h2>Project Operating System</h2>
+          <p class="muted">Setiap project memiliki dashboard, tasks, files, knowledge, AI assistant, analytics, timeline, team, notes, dan documentation.</p>
+          <div class="kanban"><div class="lane"><b>Strategy</b><div class="task">Define AI product roadmap</div><div class="task">Map knowledge sources</div></div><div class="lane"><b>Execution</b><div class="task">Generate workspace structure</div><div class="task">Assign agents</div></div><div class="lane"><b>Review</b><div class="task">Verify outputs</div><div class="task">Publish documentation</div></div></div>
+        </article>
+        <article class="card" id="memory">
+          <h2>AI Memory Visualization</h2>
+          <p class="muted">Visual memory graph, memory timeline, categories, editable memory, delete memory, and pin memory.</p>
+          <div class="memory"><span class="node"></span><span class="node"></span><span class="node"></span><span class="node"></span><span class="node"></span><span class="node"></span></div>
+          <div class="chips"><span class="chip">Editable</span><span class="chip">Delete</span><span class="chip">Pin</span><span class="chip">Timeline</span></div>
+        </article>
+        <article class="card full" id="agents">
+          <h2>Advanced Agent System</h2>
+          <p class="muted">Setiap AI Agent memiliki avatar profesional, gerakan halus, bukan kartun, bukan anime, dan tampil sebagai asisten virtual premium.</p>
+          <div class="agent-grid" id="agentGrid"></div>
+        </article>
+        <article class="card wide">
+          <h2>Agent Collaboration Mode</h2>
+          <div class="collab"><div class="message"><b>Agent Thinking</b><p class="muted">CEO Agent defines business priority while CTO Agent evaluates architecture constraints.</p></div><div class="message"><b>Agent Analysis</b><p class="muted">Security Agent reviews risk, Research Agent validates references, Product Agent checks user value.</p></div><div class="message"><b>Agent Recommendation</b><p class="muted">Developer Agent and UI UX Agent recommend implementation steps and premium interface flow.</p></div><div class="message"><b>Final Consensus</b><p class="muted">All agents agree on a production-ready plan and convert it into tasks.</p></div></div>
+        </article>
+        <article class="card" id="chat">
+          <h2>Ultimate Chat Experience</h2>
+          <p class="muted">Setiap jawaban dapat diubah menjadi output kerja.</p>
+          <div class="chips"><span class="chip">PDF</span><span class="chip">DOCX</span><span class="chip">PPT</span><span class="chip">Task</span><span class="chip">Project</span><span class="chip">Workflow</span><span class="chip">Knowledge</span><span class="chip">Code</span><span class="chip">Website</span></div>
+        </article>
+        <article class="card wide" id="documents">
+          <h2>Document Intelligence</h2>
+          <p class="muted">Upload PDF, Word, Excel, PowerPoint, images, video, audio, website URL, dan YouTube URL. AI dapat analyze, summarize, translate, explain, generate questions, extract data, dan generate reports.</p>
+          <table class="doc-table"><tr><th>Input</th><th>AI Action</th><th>Status</th></tr><tr><td>PDF annual report</td><td>Extract metrics and summarize</td><td>Ready</td></tr><tr><td>YouTube URL</td><td>Create notes and action list</td><td>Ready</td></tr><tr><td>Spreadsheet</td><td>Analyze patterns and reports</td><td>Ready</td></tr></table>
+        </article>
+        <article class="card half" id="billing">
+          <h2>Premium Billing Experience</h2>
+          <div class="billing"><div class="plan"><b>Starter</b><p class="muted">Core command center.</p></div><div class="plan featured"><b>Pro</b><p class="muted">Agent collaboration and analytics.</p></div><div class="plan"><b>Enterprise</b><p class="muted">Governance and admin control.</p></div></div>
+          <p class="muted">Includes upgrade animation, package comparison, feature comparison, usage analytics, token analytics, subscription history, invoices, and payment status.</p>
+        </article>
+        <article class="card half" id="admin">
+          <h2>Admin Control Center</h2>
+          <div class="admin-grid"><div class="admin-metric"><b>Realtime Users</b><span class="metric">18K</span></div><div class="admin-metric"><b>Revenue</b><span class="metric">$92K</span></div><div class="admin-metric"><b>AI Requests</b><span class="metric">2.8M</span></div><div class="admin-metric"><b>System Health</b><span class="metric">99%</span></div></div>
+          <p class="muted">Realtime storage, errors, monitoring, server health, and model health included.</p>
+        </article>
+        <article class="card full" id="logos">
+          <h2>Original Professional SVG Logo System</h2>
+          <p class="muted">Logo memakai huruf Z dengan pola neural network, artificial intelligence, digital brain, infinity, dan future technology. Tidak memakai emoji.</p>
+          <div class="logos">
+            <a class="logo-tile" href="assets/logos/full-logo.svg"><img src="assets/logos/full-logo.svg" alt="Full Logo" /><p>Full Logo</p></a>
+            <a class="logo-tile" href="assets/logos/icon-only.svg"><img src="assets/logos/icon-only.svg" alt="Icon Only Logo" /><p>Icon Only</p></a>
+            <a class="logo-tile" href="assets/logos/horizontal-logo.svg"><img src="assets/logos/horizontal-logo.svg" alt="Horizontal Logo" /><p>Horizontal Logo</p></a>
+            <a class="logo-tile" href="assets/logos/vertical-logo.svg"><img src="assets/logos/vertical-logo.svg" alt="Vertical Logo" /><p>Vertical Logo</p></a>
+            <a class="logo-tile mono" href="assets/logos/monochrome.svg"><img src="assets/logos/monochrome.svg" alt="Monochrome Logo" /><p>Monochrome</p></a>
+            <a class="logo-tile" href="assets/logos/dark-mode.svg"><img src="assets/logos/dark-mode.svg" alt="Dark Mode Logo" /><p>Dark Mode</p></a>
+            <a class="logo-tile light" href="assets/logos/light-mode.svg"><img src="assets/logos/light-mode.svg" alt="Light Mode Logo" /><p>Light Mode</p></a>
+            <a class="logo-tile favicon" href="assets/logos/favicon.svg"><img src="assets/logos/favicon.svg" alt="Favicon" /><p>Favicon</p></a>
+          </div>
+        </article>
+      </section>
+    </main>
+  </div>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>
